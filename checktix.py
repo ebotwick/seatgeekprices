@@ -4,7 +4,7 @@ import requests, json
 #WS Game 4 - 4959419
 #UVA vs Duke NCAA Hoops JPJ Feb 28 - 4998086
 #UVA UNC Hoops JPJ Dec 7 - 5115025
-geekdata = requests.get('https://api.seatgeek.com/2/events/4998086?client_id=NTcxNzY4M3wxNTcxOTU2NzczLjgx&client_secret=1343f67d5c217b44590f663e72c345a6a4a1ae7e9cedbc6663ad951c8305ea48')
+geekdata = requests.get('https://api.seatgeek.com/2/events/<event_id>?client_id=<client_id>&client_secret=<client_secret>')
 geekjson = geekdata.json()
 geekresp = json.dumps(geekjson)
 
